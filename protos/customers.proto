@@ -1,0 +1,24 @@
+syntax = "proto3";
+package customers;
+option go_package="customerspb";
+
+message GetQuery {
+  int32 customerId = 1;
+}
+
+message Customer {
+  int32 customerId = 1;
+  string firstName = 2;
+  string lastName = 3;
+  string emailAddress = 4;
+  enum CustomerType {
+      RED = 0;
+      GREEN = 1;
+      BLUE = 2;
+  }
+  CustomerType customerType = 5;
+}
+
+service Customers {
+  rpc Get(GetQuery) returns (Customer) {};
+}
