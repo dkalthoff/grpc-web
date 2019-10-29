@@ -3,6 +3,9 @@ This repo contains the files needed to make gRPC requests from the browser.
 
 ![Components](https://github.com/dkalthoff/grpc-web/blob/master/Components.png?raw=true)
 
+Followed tutorial at:
+https://medium.com/@Sushil_Kumar/ditching-rest-with-grpc-web-and-envoy-bfaa89a39b32
+
 ## Implementation
 1. How to generate the go pb files from the .proto
 
